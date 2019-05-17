@@ -1,2 +1,2 @@
 -i https://binder-build:testbinderbuild@pypi.rasa.ai/simple
-rasax==0.19.0a4.dev28+gb642b98
+rasa-x==0.19.0a6.dev68+g05f389a

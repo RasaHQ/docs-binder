@@ -5,7 +5,7 @@ rasa () {
   if [[ $1 == "x" ]]; then 
     echo "preparing session.."
     (/srv/conda/bin/rasa "$@" &)
-    (./ngrok http 5002  > /dev/null &)
+    (/home/jovyan/ngrok http 5002  > /dev/null &)
     sleep 2
     URL=$(curl localhost:4040/api/tunnels | \
           python -m json.tool | \
