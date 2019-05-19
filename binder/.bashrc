@@ -12,7 +12,7 @@ rasa () {
           grep public_url | \
           grep https | \
           sed 's/"*[^"]*": "\([^"]*\)",/\1/')
-    printf "hold on."
+    printf "starting ."
     until $(curl --output /dev/null --silent --head --fail http://localhost:5002); do
         printf '.'
         sleep 2
@@ -21,9 +21,5 @@ rasa () {
     echo "button $URL"
   else
     /srv/conda/bin/rasa "$@"
-    if [[ $1 == "init" ]]; then
-      echo "all done!✨ "
-      echo "go ahead and run the next cell."
-    fi
   fi
 }
