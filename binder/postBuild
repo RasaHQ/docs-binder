@@ -1,5 +1,5 @@
 python bash_kernel/install.py
 mv binder/.bashrc ~/.bashrc
-mkdir -p ~/.config/rasa && mv binder/config.yml ~/.config/rasa/
+mkdir -p ~/.config/rasa && mv binder/global.yml ~/.config/rasa/
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 unzip ngrok-stable-linux-amd64.zip
