@@ -13,7 +13,7 @@ rasa () {
           grep https | \
           sed 's/"*[^"]*": "\([^"]*\)",/\1/')
     printf "starting ."
-    until $(curl --output /dev/null --silent --head --fail http://localhost:5002); do
+    until $(curl --output /dev/null --silent --fail http://localhost:5002); do
         printf '.'
         sleep 2
     done
