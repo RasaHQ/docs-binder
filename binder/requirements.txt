@@ -1,2 +1,2 @@
 -i https://@pypi.rasa.com/simple
-rasa-x==0.19.0rc2.dev9+g6876ad5
+rasa-x==0.19.0rc3
