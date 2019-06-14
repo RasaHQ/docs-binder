@@ -4,7 +4,7 @@ export RASA_X_PASSWORD="rasademo"
 rasa () {
   if [[ $1 == "x" ]]; then 
     echo "preparing session.."
-    (/srv/conda/bin/rasa "$@" &)
+    (/srv/conda/envs/notebook/bin/rasa "$@" &)
     (/home/jovyan/ngrok http 5002  > /dev/null &)
     sleep 2
     URL=$(curl localhost:4040/api/tunnels | \
@@ -20,6 +20,6 @@ rasa () {
     URL=${URL}"/login?username=me&password=${RASA_X_PASSWORD}"
     echo "button $URL"
   else
-    /srv/conda/bin/rasa "$@"
+    /srv/conda/envs/notebook/bin/rasa "$@"
   fi
 }
