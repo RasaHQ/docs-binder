@@ -1,5 +1,5 @@
 export LOG_LEVEL="ERROR"
-export RASAX_PASSWORD="rasademo"
+export RASA_X_PASSWORD="rasademo"
 
 rasa () {
   if [[ $1 == "x" ]]; then 
