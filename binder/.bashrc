@@ -17,7 +17,7 @@ rasa () {
         printf '.'
         sleep 2
     done
-    URL=${URL}"/login?username=me&password=${RASAX_PASSWORD}"
+    URL=${URL}"/login?username=me&password=${RASA_X_PASSWORD}"
     echo "button $URL"
   else
     /srv/conda/bin/rasa "$@"
