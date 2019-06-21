@@ -1,2 +1,2 @@
 -i https://pypi.rasa.com/simple
-rasa-x==0.19.1
+rasa-x==0.19.2
