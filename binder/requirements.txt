@@ -1,4 +1,4 @@
 nest_asyncio==1.0.0
 -i https://pypi.rasa.com/simple
 rasa-x==0.19.3
--e git://github.com/rasahq/rasa@master#egg=rasa
+rasa==1.1.5
