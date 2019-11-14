@@ -1,4 +1,4 @@
 nest_asyncio==1.0.0
 -i https://pypi.rasa.com/simple
-rasa-x==0.19.3
-rasa==1.1.5
+rasa-x==0.22.2
+rasa==1.4.5
