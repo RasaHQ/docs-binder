@@ -1,3 +1,2 @@
 nest_asyncio==1.0.0
--i https://pypi.rasa.com/simple
 rasa~=1.10.0
